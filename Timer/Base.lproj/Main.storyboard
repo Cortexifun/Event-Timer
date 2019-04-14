@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Timer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDs-9F-qvR">
+                                <rect key="frame" x="173" y="319" width="30" height="30"/>
+                                <state key="normal" title="1st"/>
+                                <connections>
+                                    <action selector="firstButtonInButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9b9-sG-r8n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smW-Fg-RBq">
+                                <rect key="frame" x="173" y="392" width="30" height="30"/>
+                                <state key="normal" title="2nd"/>
+                                <connections>
+                                    <action selector="secondButtonInButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PuZ-8k-XRe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAE-ol-sGk">
+                                <rect key="frame" x="156" y="455" width="63" height="30"/>
+                                <state key="normal" title="Compare"/>
+                                <connections>
+                                    <action selector="compareButtonInButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8gy-Zz-Akv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UAE-ol-sGk" secondAttribute="bottom" constant="182" id="2GS-pP-MTA"/>
+                            <constraint firstItem="dDs-9F-qvR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3yk-bF-7Ia"/>
+                            <constraint firstItem="UAE-ol-sGk" firstAttribute="top" secondItem="smW-Fg-RBq" secondAttribute="bottom" constant="33" id="64k-uw-AX2"/>
+                            <constraint firstItem="UAE-ol-sGk" firstAttribute="top" secondItem="smW-Fg-RBq" secondAttribute="bottom" constant="33" id="GIa-8q-V9a"/>
+                            <constraint firstItem="UAE-ol-sGk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="156" id="Mo4-kd-aRz"/>
+                            <constraint firstItem="smW-Fg-RBq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="173" id="gMf-9P-gdU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="smW-Fg-RBq" secondAttribute="trailing" constant="172" id="krj-vg-HtZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UAE-ol-sGk" secondAttribute="trailing" constant="156" id="lon-Rx-fyN"/>
+                            <constraint firstItem="smW-Fg-RBq" firstAttribute="top" secondItem="dDs-9F-qvR" secondAttribute="bottom" constant="43.5" id="qSx-9z-P8C"/>
+                            <constraint firstItem="dDs-9F-qvR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rCG-SA-6zz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
